@@ -15,7 +15,10 @@ namespace MyLemonadeStand
 
         //Constructor (Spawner)
 
-
+        public Day()
+        {
+            Weather weather = new Weather();
+        }
 
         //Member Methods (Can Do)
         public void GetForecast()
@@ -23,7 +26,7 @@ namespace MyLemonadeStand
             for (int i = 0; i < forecast.length; i++)
             {
 
-                Weather weather = new weather();
+                
                 forecast.Add(weather);
 
             }

@@ -16,6 +16,7 @@ namespace MyLemonadeStand
         public bool stop;
         public bool pay;
         public bool drink;
+        public bool pricePoint;
 
 
         //constructor(Spawner)
@@ -38,6 +39,8 @@ namespace MyLemonadeStand
             
 
         }
+
+        
 
 
 
