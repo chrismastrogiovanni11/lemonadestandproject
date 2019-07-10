@@ -9,23 +9,24 @@ namespace MyLemonadeStand
     class Weather
     {
         //member variables (Has A)
-        public string rainy;
-        public string hazy;
-        public string sunny;
-        public string cloudy;
+
+
+        public string weatherTypes;
+
+        public int temperature;
 
 
 
         //constructor(Spawner)
-
-
-        //member methods(Can Do)
-        public void getTodayWeather()
+        public Weather()
         {
-
-
-
+            temperature = Random.next(100);
+            weatherTypes = List < Weather > Conditions = new List<Weather>("rain", "hazy", "cloudy", "sunny", "hot");
         }
+        //member methods(Can Do)
+        
+         public void 
+        
 
     }
 }

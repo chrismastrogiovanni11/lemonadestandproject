@@ -10,17 +10,24 @@ namespace MyLemonadeStand
     {
 
         //member variables (Has A)
-        List<Day> week = new List<Day>();
+        List<Day> week = new List<Day>("Monday" , "Tuesday" , "Wednesday" , "Thursday" , "Friday" , "Saturday" , "Sunday");
+        
+
         //Constructor (Spawner)
 
         //Member methods (Can Do)
         public void GenerateDays()
         {
-            for (int i = 0; i < 7; i++)
+            for (int i = 0; i < week.length; i++)
             {
                 Day day = new Day();
                 week.Add(day);
             }
+        }
+
+        public void CreateForecast()
+        {
+
         }
     }
 }

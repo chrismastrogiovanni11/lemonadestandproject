@@ -8,5 +8,16 @@ namespace MyLemonadeStand
 {
     class UserInterface
     {
+
+        //Member Variables (Has a)
+
+
+        //Constructor (Spawner)
+
+
+
+        //Member Methods (Can Do)
+
+
     }
 }

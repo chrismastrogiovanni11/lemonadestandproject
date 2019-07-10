@@ -8,10 +8,14 @@ namespace MyLemonadeStand
 {
     class Customer
     {
+        
+
 
         //member variables (Has A)
         public int money;
-
+        public bool stop;
+        public bool pay;
+        public bool drink;
 
 
         //constructor(Spawner)
@@ -21,7 +25,17 @@ namespace MyLemonadeStand
 
         public void GetLemonade()
         {
+            if (true)
+            {
 
+            }
+            
+
+           
+            
+            
+
+            
 
         }
 
