@@ -10,7 +10,7 @@ namespace MyLemonadeStand
     {
 
         //Member Variables (Has a)
-        List<Weather> forecast = new List<Weather>("rainy", "hazy", "sunny", "hot", "cloudy");
+        string [] forecast = { "rainy", "hazy", "sunny", "hot", "cloudy" };
 
 
         //Constructor (Spawner)
@@ -18,16 +18,17 @@ namespace MyLemonadeStand
         public Day()
         {
             Weather weather = new Weather();
+            
         }
 
         //Member Methods (Can Do)
         public void GetForecast()
         {
-            for (int i = 0; i < forecast.length; i++)
+            for (int i = 0; i < forecast.Length; i++)
             {
 
                 
-                forecast.Add(weather);
+               // forecast.Add();
 
             }
             
@@ -38,6 +39,7 @@ namespace MyLemonadeStand
 
         public void CreateForecast()
         {
+            
 
         }
         

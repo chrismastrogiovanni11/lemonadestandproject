@@ -20,7 +20,10 @@ namespace MyLemonadeStand
 
 
         //constructor(Spawner)
+        public Customer()
+        {
 
+        }
 
         //member methods(Can Do)
 

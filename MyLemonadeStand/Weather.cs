@@ -11,38 +11,28 @@ namespace MyLemonadeStand
         //member variables (Has A)
 
 
-        public string weatherTypes;
+        public List<string> weatherTypes;
 
         public int temperature;
+        public string currentCondition;
+        private Random rng;
 
 
 
         //constructor(Spawner)
         public Weather()
         {
-            temperature = Random.next(50-100);
-            weatherTypes = List < Weather > Conditions = new List<Weather>("rain", "hazy", "cloudy", "sunny", "hot");
+            rng = new Random();
+            weatherTypes = new List<string> { "rain", "hazy", "cloudy", "sunny", "hot" };
+            GenerateWeather();
         }
         //member methods(Can Do)
         
-         public void GenerateWeather()
+        public void GenerateWeather()
         {
-            
-            Weather weather = new weatherTypes();
-
-            if (temperature >= 75)
-            {
-                Console.WriteLine("hot and sunny");
-
-            }
-            else if(temperature <=69)
-            {
-                Console.WriteLine("cloudy");
-            }
-            else(temperature <= 59)
-            {
-                Console.WriteLine("rain and hazy");
-            }
+            temperature = rng.Next(50, 100);
+            currentCondition = weatherTypes[rng.Next(0,6)];
+     
         }
         
 

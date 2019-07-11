@@ -11,14 +11,30 @@ namespace MyLemonadeStand
 
         //Member Variables (Has a)
         public int budget;
-        
-        
 
-        //Constructor (Spawner)
 
+
+       //Constructor (Spawner)
+        public Player()
+        {
+            budget = 20;     
+        }
 
 
         //Member Methods (Can Do)
+        public void PurchaseLemons()
+        {
 
+        }
+
+        public void PurchaseIce()
+        {
+
+        }
+
+        public void PurchaseSugar()
+        {
+
+        }
     }
 }
