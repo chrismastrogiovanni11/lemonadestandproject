@@ -16,6 +16,7 @@ namespace MyLemonadeStand
         public bool stop;
         public bool pay;
         public double pricePoint;
+        public double willingtoSpend;
 
 
         //constructor(Spawner)
@@ -24,31 +25,34 @@ namespace MyLemonadeStand
             money = 10;
             stop = false;
             pay = false;
-            pricePoint = .25;
+            pricePoint = 0;
+            willingtoSpend = .25;
             
         }
 
         //member methods(Can Do)
 
-        public void GetLemonade()
+
+
+
+
+        public void customerPay(int temperature, double willingtoSpend, willingtoStop)
         {
-            if (true)
+
+            if (pricePoint <= willingtoSpend)
+            {
+
+                Store.budget.Add(Store);
+
+            }
+            else
             {
 
 
-
             }
-            
 
-           
-            
-            
-
-            
 
         }
-
-        
 
 
 

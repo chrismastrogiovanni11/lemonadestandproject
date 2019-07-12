@@ -13,17 +13,15 @@ namespace MyLemonadeStand
 
 
        public Weather weather;
-        public Random gnr;
+       public Random gnr;
+
+
         //Constructor (Spawner)
 
         public Day(Random rand)
         {
             gnr = rand;
             weather = new Weather(gnr);
-
-            
-         
-            
         }
 
         //Member Methods (Can Do)

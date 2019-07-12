@@ -21,31 +21,29 @@ namespace MyLemonadeStand
             sugar = 0;
             ice = 0;
 
-
         }
 
 
         //Member Methods (Can Do)
 
-        public void GetLemons()
+        public void addLemons()
         {
-            lemons = int.Parse(Console.ReadLine());
+
+
+            Store.lemons;
         }
 
-        public void GetSugar()
-        {
-            sugar = int.Parse(Console.ReadLine());
-
-        }
-
-        public void GetIce()
+        public void addSugar()
         {
 
-            ice = int.Parse(Console.ReadLine());
-
+            Store.sugar;
         }
         
-        
+        public void addIce()
+        {
+
+            Store.ice;
+        }
         
     }
 }

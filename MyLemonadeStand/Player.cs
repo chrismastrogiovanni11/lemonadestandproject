@@ -13,7 +13,7 @@ namespace MyLemonadeStand
         public int budget;
         public string playerName;
         public double setPrice;
-
+        Inventory invent;
 
        //Constructor (Spawner)
         public Player()
@@ -21,7 +21,7 @@ namespace MyLemonadeStand
             budget = 20;
             playerName = null;
             setPrice = .25;
-            
+            invent = new Inventory();
 
         }
 
@@ -35,8 +35,15 @@ namespace MyLemonadeStand
         }
         public void PurchaseLemons()
         {
+            if(true)
+            {
+                budget--;
+            }
+            else
+            {
 
-            budget--;
+            }
+            
         }
 
         public void PurchaseIce()
@@ -45,11 +52,12 @@ namespace MyLemonadeStand
             if(true)
             {
                 budget--;
-                Inventory.ice++;
+                
                 
             }
             else
             {
+
                 
             }
             
@@ -57,6 +65,24 @@ namespace MyLemonadeStand
 
         public void PurchaseSugar()
         {
+            Console.WriteLine("Would you like to purchase sugar?");
+
+            if ()
+            {
+                budget--;
+
+            }
+            else
+            {
+
+            }
+
+        }
+
+        public void AdjustPrice()
+        {
+            Console.WriteLine("Would you like to change the price?");
+            price = Console.ReadLine();
 
         }
     }

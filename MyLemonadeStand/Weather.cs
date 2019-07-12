@@ -46,7 +46,7 @@ namespace MyLemonadeStand
             //currentResult = currentCondition;
 
             
-            //console.readline both tempResult and currentResult;
+           
             
 
         }

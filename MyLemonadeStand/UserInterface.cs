@@ -10,6 +10,8 @@ namespace MyLemonadeStand
     {
 
         //Member Variables (Has a)
+        public double profit;
+        public double loss;
 
 
         //Constructor (Spawner)
