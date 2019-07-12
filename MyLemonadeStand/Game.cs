@@ -11,15 +11,17 @@ namespace MyLemonadeStand
 
 
         //member variables (Has A)
-        public string Player;
+        
         public string instructions;
         List<Day> week = new List<Day>();
+        public Random gnr;
+        
 
         //Constructor (Spawner)
         public Game()
         {
-            
 
+            gnr = new Random();
 
 
         }
@@ -31,15 +33,12 @@ namespace MyLemonadeStand
         {
             for (int i = 0; i < 7; i++)
             {
-                Day day = new Day();
+                Day day = new Day(gnr);
                 week.Add(day);
+                
             }
         }
 
-        public void CreateForecast()
-        {
-
-        }
 
         public void DisplayInstructions()
         {
@@ -50,17 +49,32 @@ namespace MyLemonadeStand
 
         public void GetPlayerName()
         {
-            Console.WriteLine("Enter player name");
-            Console.ReadLine();
+            Player player = new Player();
+            Console.WriteLine("Enter Player name");
+            player.playerName = Console.ReadLine();
         }
 
+        public void GetInventory()
+        {
+            Inventory inventory = new Inventory();
+        }
 
         public void RunGame()
         {
             GetPlayerName();
             DisplayInstructions();
             GenerateDays();
-            CreateForecast();
+            for (int i = 0; i < week.Count; i++)
+            {
+                Console.WriteLine("Today's Forecast");
+
+                int test = week[i].weather.temperature;
+                Console.WriteLine(test);
+
+                string condition = week[i].weather.currentCondition;
+                Console.WriteLine(condition);
+
+            }
 
         }
     }

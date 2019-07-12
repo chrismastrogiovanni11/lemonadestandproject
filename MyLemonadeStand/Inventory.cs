@@ -29,20 +29,18 @@ namespace MyLemonadeStand
 
         public void GetLemons()
         {
-            Console.WriteLine("How many lemons do you want?");
             lemons = int.Parse(Console.ReadLine());
         }
 
         public void GetSugar()
         {
-            Console.WriteLine("How much sugar do you want?");
             sugar = int.Parse(Console.ReadLine());
 
         }
 
         public void GetIce()
         {
-            Console.WriteLine("How much ice do you need?");
+
             ice = int.Parse(Console.ReadLine());
 
         }

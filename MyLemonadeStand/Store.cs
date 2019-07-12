@@ -16,7 +16,12 @@ namespace MyLemonadeStand
 
         //Constructor (Spawner)
 
-
+        public Store()
+        {
+            price = 0;
+            profit = 0;
+            loss = 0;
+        }
 
         //Member Methods (Can Do)
         public void CalculateProfit()
@@ -26,6 +31,8 @@ namespace MyLemonadeStand
 
         public void GetLoss()
         {
+
+
 
         }
 

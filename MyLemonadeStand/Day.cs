@@ -10,38 +10,25 @@ namespace MyLemonadeStand
     {
 
         //Member Variables (Has a)
-        string [] forecast = { "rainy", "hazy", "sunny", "hot", "cloudy" };
 
 
+       public Weather weather;
+        public Random gnr;
         //Constructor (Spawner)
 
-        public Day()
+        public Day(Random rand)
         {
-            Weather weather = new Weather();
+            gnr = rand;
+            weather = new Weather(gnr);
+
+            
+         
             
         }
 
         //Member Methods (Can Do)
-        public void GetForecast()
-        {
-            for (int i = 0; i < forecast.Length; i++)
-            {
 
-                
-               // forecast.Add();
 
-            }
-            
-            
-           
-        
-        }
-
-        public void CreateForecast()
-        {
-            
-
-        }
         
     }
 }

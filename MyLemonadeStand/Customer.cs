@@ -9,20 +9,23 @@ namespace MyLemonadeStand
     class Customer
     {
         
-
+        //create other customers with certain criteria in order to differeniate who stops and pays for lemonade
 
         //member variables (Has A)
         public int money;
         public bool stop;
         public bool pay;
-        public bool drink;
-        public bool pricePoint;
+        public double pricePoint;
 
 
         //constructor(Spawner)
         public Customer()
         {
-
+            money = 10;
+            stop = false;
+            pay = false;
+            pricePoint = .25;
+            
         }
 
         //member methods(Can Do)
@@ -31,6 +34,8 @@ namespace MyLemonadeStand
         {
             if (true)
             {
+
+
 
             }
             

@@ -13,13 +13,16 @@ namespace MyLemonadeStand
         public int numberofLemons;
         public int cupsofSugar;
         public int cubesofIce;
-        public int cupPerpitcher;
+        public int userInput;
 
 
         //Constructor (Spawner)
         public Recipe()
         {
-            
+            numberofLemons = 0;
+            cupsofSugar = 0;
+            cubesofIce = 0;
+            userInput = 0;
            
 
 
@@ -29,17 +32,22 @@ namespace MyLemonadeStand
 
         //Member Methods (Can Do)
 
-        public void createRecipe()
+        public void InsertLemons()
         {
 
 
         }
 
-        public void GeneratePitcher()
+        public void InsertSugar()
         {
 
-            
+
         }
 
+        public void InsertIce()
+        {
+
+
+        }
     }
 }
