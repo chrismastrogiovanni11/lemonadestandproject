@@ -15,7 +15,7 @@ namespace MyLemonadeStand
         public int cubesofIce;
         public int userInput;
         Inventory inventory;
-
+        
 
         //Constructor (Spawner)
         public Recipe()
@@ -51,11 +51,6 @@ namespace MyLemonadeStand
         {
             Console.WriteLine("How much ice would you like to put into your lemonade?");
             inventory.ice -= int.Parse(Console.ReadLine());
-            
-        }
-
-        public void MakeLemonade(Inventory inventory)
-        {
             
         }
     }

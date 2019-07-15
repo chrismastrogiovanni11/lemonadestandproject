@@ -16,6 +16,7 @@ namespace MyLemonadeStand
         public double profit;
         public double loss;
         Inventory inventory;
+       
 
 
        //Constructor (Spawner)
@@ -25,6 +26,7 @@ namespace MyLemonadeStand
             playerName = null;
             setPrice = .25;
             inventory = new Inventory();
+            
 
         }
 
@@ -36,12 +38,12 @@ namespace MyLemonadeStand
             Console.WriteLine("Enter Player name");
             playerName = Console.ReadLine();
         }
-        public void PurchaseLemons(int lemons, int lemonPrice)
+        public void PurchaseLemons(int lemons, int lemonPrice, Store store)
         {
             //Console.WriteLine("Would you like to purchase lemons?");
             Console.WriteLine("How many lemons would you like to purchase?");
             int lemonsToPurchase = Int32.Parse(Console.ReadLine());
-            int totalLemonsPrice = lemonsToPurchase * lemonPrice;
+            int totalLemonsPrice = lemonsToPurchase * store.lemonsPrice;
 
             if (lemons > 0) // if they have enough money
             {
@@ -51,16 +53,16 @@ namespace MyLemonadeStand
             }
             else
             {
-
+                _=inventory.lemons == lemons;
             }
             
         }
 
-        public void PurchaseIce(int poundsofIce, int icePrice)
+        public void PurchaseIce(int poundsofIce, int icePrice, Store store)
         {
             Console.WriteLine("Would you like to purchase Ice?");
             poundsofIce = int.Parse(Console.ReadLine());
-           int totalIcePrice = poundsofIce * icePrice;
+           int totalIcePrice = poundsofIce * store.icePrice;
 
 
             if (poundsofIce > 0)
@@ -73,17 +75,17 @@ namespace MyLemonadeStand
             }
             else
             {
-
+                _=inventory.ice == poundsofIce;
                 
             }
             
         }
 
-        public void PurchaseSugar(int cupsPurchased, int sugarPrice)
+        public void PurchaseSugar(int cupsPurchased, int sugarPrice, Store store)
         {
             Console.WriteLine("Would you like to purchase sugar?");
             cupsPurchased = int.Parse(Console.ReadLine());
-            int totalSugarPrice = cupsPurchased * sugarPrice;
+            int totalSugarPrice = cupsPurchased * store.sugarPrice;
 
             if (cupsPurchased > 0)
             {
@@ -94,15 +96,16 @@ namespace MyLemonadeStand
             }
             else
             {
-
+                _=inventory.sugar == cupsPurchased;
             }
 
         }
 
         public void AdjustPrice()
         {
+
             Console.WriteLine("Would you like to change the price?");
-            setPrice = int.Parse(Console.ReadLine());
+            setPrice = double.Parse(Console.ReadLine());
 
         }
     }

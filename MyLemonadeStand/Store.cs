@@ -13,19 +13,17 @@ namespace MyLemonadeStand
         public double price;
         public int profit;
         public int loss;
-        // Inventory invent;
         public int lemonsPrice;
         public int sugarPrice;
         public int icePrice;
-        Recipe recip;
+        List<Recipe> cupsOfLemonade = new List<Recipe>();
+
 
 
         //Constructor (Spawner)
 
         public Store()
         {
-            // invent = new Inventory();
-            recip = new Recipe();
             price = 0;
             profit = 0;
             loss = 0;
@@ -37,16 +35,15 @@ namespace MyLemonadeStand
         }
 
         //Member Methods (Can Do)
-        public void CalculateProfit()
-        {
-
-
-
-        }
 
         public void GetLoss()
         {
           
+
+        }
+
+        public void GetProfit()
+        {
 
         }
     }

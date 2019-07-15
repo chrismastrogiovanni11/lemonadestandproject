@@ -26,23 +26,23 @@ namespace MyLemonadeStand
 
         //Member Methods (Can Do)
 
-        public void addLemons()
-        {
+        //public void addLemons()
+        //{
 
 
-        }
+        //}
 
-        public void addSugar()
-        {
+        //public void addSugar()
+        //{
 
             // Store.sugar ++;
-        }
+        //}
         
-        public void addIce(Player player)
-        {
+        //public void addIce(Player player)
+        //{
             
             // Store.ice ++;
-        }
+       // }
         
     }
 }

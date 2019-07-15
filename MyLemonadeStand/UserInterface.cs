@@ -24,17 +24,26 @@ namespace MyLemonadeStand
 
         //Member Methods (Can Do)
 
-        public void DisplayProfit(Player player)
+        public bool DisplayProfit(Player player)
         {
             if (player.profit > player.budget)
             {
-                double.Parse(Console.ReadLine());
+                Console.WriteLine("You earned a profit today");
+                profit = double.Parse(Console.ReadLine());
+                return true;
             }
             else if(player.loss > player.budget)
             {
-                double.Parse(Console.ReadLine());
+                Console.WriteLine("You lost money today");
+                loss = double.Parse(Console.ReadLine());
+                return false;
+                
             }
-           
+            else
+            {
+                Console.WriteLine("You broke even today");
+                return false;
+            }
         }
 
 

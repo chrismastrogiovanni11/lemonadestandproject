@@ -18,6 +18,7 @@ namespace MyLemonadeStand
         public double willingtoSpend;
         public int stopTemp;
         public double pricePaid;
+        public Recipe recipe;
         
 
 
@@ -33,6 +34,8 @@ namespace MyLemonadeStand
             
             
             
+            
+            
         }
 
         //member methods(Can Do)
@@ -41,19 +44,40 @@ namespace MyLemonadeStand
 
 
 
-        public void customerPay(int temperature, double willingtoSpend, Player player, Weather weather, double newWillingToSpend)
+        public bool CustomerStop(int temperature, Weather weather)
         {
 
-           
+            if (stopTemp >= weather.temperature)
+            {
+                Console.WriteLine("customer is interested");
+                return true;
+
+            }
+            else if (stopTemp == weather.temperature)
+            {
+                Console.WriteLine("customer is slightly interested");
+                return true;
+            }
+            else
+            {
+                Console.WriteLine("customer is not interested");
+                return false;
+            }
+        }
+
+        public bool customerPay(int temperature, double willingtoSpend, Player player, Weather weather, double newWillingToSpend)
+        {
 
 
-            if (player.setPrice <= willingtoSpend && stopTemp >= weather.temperature)
+
+
+            if (player.setPrice <= willingtoSpend)
             {
                 Console.WriteLine("customer has purchased lemonade");
 
-                
-                
-                // Store.budget.Add();
+                player.budget += player.setPrice;
+                return true;
+
 
             }
             else if (player.setPrice >= willingtoSpend && stopTemp >= weather.temperature)
@@ -62,10 +86,19 @@ namespace MyLemonadeStand
 
                 Console.WriteLine("customer has purchased lemonade");
 
+                player.budget += player.setPrice;
+                return true;
+
+            }
+            else
+            {
+                _ = player.budget == player.setPrice;
+                return false;
             }
 
-
         }
+
+
 
 
     }
