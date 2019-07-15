@@ -12,13 +12,31 @@ namespace MyLemonadeStand
         //Member Variables (Has a)
         public double profit;
         public double loss;
+        
 
 
         //Constructor (Spawner)
+        public UserInterface()
+        {
 
+        }
 
 
         //Member Methods (Can Do)
+
+        public void DisplayProfit(Player player)
+        {
+            if (player.profit > player.budget)
+            {
+                double.Parse(Console.ReadLine());
+            }
+            else if(player.loss > player.budget)
+            {
+                double.Parse(Console.ReadLine());
+            }
+           
+        }
+
 
 
     }

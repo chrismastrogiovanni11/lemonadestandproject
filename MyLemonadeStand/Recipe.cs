@@ -14,6 +14,7 @@ namespace MyLemonadeStand
         public int cupsofSugar;
         public int cubesofIce;
         public int userInput;
+        Inventory inventory;
 
 
         //Constructor (Spawner)
@@ -23,6 +24,7 @@ namespace MyLemonadeStand
             cupsofSugar = 0;
             cubesofIce = 0;
             userInput = 0;
+            inventory = new Inventory();
            
 
 
@@ -34,20 +36,27 @@ namespace MyLemonadeStand
 
         public void InsertLemons()
         {
-
-
+            Console.WriteLine("How many lemons would you like to put in your lemonade?");
+            inventory.lemons -= int.Parse(Console.ReadLine());
         }
 
         public void InsertSugar()
         {
-
+            Console.WriteLine("How much sugar would you like to put into your lemonade?");
+            inventory.sugar -= int.Parse(Console.ReadLine());
 
         }
 
         public void InsertIce()
         {
+            Console.WriteLine("How much ice would you like to put into your lemonade?");
+            inventory.ice -= int.Parse(Console.ReadLine());
+            
+        }
 
-
+        public void MakeLemonade(Inventory inventory)
+        {
+            
         }
     }
 }

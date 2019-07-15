@@ -30,19 +30,18 @@ namespace MyLemonadeStand
         {
 
 
-            Store.lemons;
         }
 
         public void addSugar()
         {
 
-            Store.sugar;
+            // Store.sugar ++;
         }
         
-        public void addIce()
+        public void addIce(Player player)
         {
-
-            Store.ice;
+            
+            // Store.ice ++;
         }
         
     }
