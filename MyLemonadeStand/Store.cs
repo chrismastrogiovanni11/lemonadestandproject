@@ -36,9 +36,15 @@ namespace MyLemonadeStand
 
         //Member Methods (Can Do)
 
-        public void GetLoss()
+        public void MakeLemonade()
         {
-          
+            for (int i = 0; i <cupsOfLemonade.Count; i++)
+            {
+                Recipe recipe = new Recipe();
+                cupsOfLemonade.Add(recipe);
+
+
+            }
 
         }
 
